@@ -1274,7 +1274,7 @@ input, select, textarea {
 				left: calc(50% - 1px);
 				width: 1px;
 				height: calc(3.5rem + 1px);
-				background: #ffffff;
+				
 			}
 
 		#header > :first-child {
@@ -1286,15 +1286,21 @@ input, select, textarea {
 			}
 
 		#header .logo {
-			width: 10.5rem;
-			height: 10.5rem;
+			display:flex;
+  			flex-direction:row;
+  			background-color: #AAA59D;
+			opacity: .8;
+  			padding-top: 10px;;
+			width: 50%;
+			height: 40%;
 			line-height: 10.5rem;
-			border: solid .5px #ffffff;
+			/*border: solid .5px #ffffff;*/
 			border-radius: 0%;
+			
 		}
 
 			#header .logo .icon:before {
-				font-size: 2rem;
+				font-size: 3rem;
 			}
 
 		#header .content {
@@ -1655,13 +1661,18 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
-		/*//added stuff*/
+		/*added stuff*/
 		.tab {
 			display:inline-block;
 			margin-left: 50px;
 		}
-		.img1 {
-			max-width: 100%;
+		.img1{
+
+			width: 100%;
+			background-color: transparent;
+			mix-blend-mode: multiply;
+
 			
-		}
-		
+			
+			
+	}
